@@ -1,0 +1,2 @@
+SELECT countriesAndTerritories AS "Countries and Territories", ROUND((SUM(deaths)*100.0/SUM(cases)),2) AS "% Deaths of Country Cases"
+FROM covidInfo GROUP BY countriesAndTerritories ORDER BY ROUND((SUM(deaths)*100.0/SUM(cases)),2) DESC LIMIT 10;

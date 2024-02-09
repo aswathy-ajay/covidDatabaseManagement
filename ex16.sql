@@ -1,0 +1,2 @@
+SELECT covidInfo.countriesAndTerritories AS "Countries and Territories", covidInfo.dateRep AS "Date", covidInfo.cases AS "Cases", covidInfo.deaths AS "Deaths"
+FROM covidInfo INNER JOIN dateInfo dI on dI.dateRep = covidInfo.dateRep ORDER BY dI.year,dI.month,dI.day;
